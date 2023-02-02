@@ -10,13 +10,13 @@ function App() {
 
   function getData() {
     console.log("fetching python localhost");
-    axios.get('/profile')
+    axios.get('/hello')
       .then((response) => {
         const res = response.data
         console.log(res)
       setProfileData(({
         profile_name: res.name,
-        about_me: res.about}))
+        hello_world: res.hello}))
     }).catch((error) => {
       if (error.response) {
         console.log(error.response)
@@ -47,7 +47,7 @@ function App() {
         <p>To get your profile details: </p><button onClick={getData}>Click me</button>
         {profileData && <div>
               <p>Profile name: {profileData.profile_name}</p>
-              <p>About me: {profileData.about_me}</p>
+              <p>{profileData.hello_world}</p>
             </div>
         }
          {/* end of new line */}

@@ -2,11 +2,11 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/profile')
-def my_profile():
+@app.route('/hello')
+def hello_world():
     response_body = {
         "name": "Trinity",
-        "about": "Hello! I'm a CS student learning to combine multiple frameworks!",
+        "hello": "Hello, World!"
     }
 
     return response_body
