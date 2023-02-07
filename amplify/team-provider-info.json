@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-magictailors-dev-173409-authRole",
+      "UnauthRoleArn": "arn:aws:iam::031497916965:role/amplify-magictailors-dev-173409-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::031497916965:role/amplify-magictailors-dev-173409-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-magictailors-dev-173409-deployment",
+      "UnauthRoleName": "amplify-magictailors-dev-173409-unauthRole",
+      "StackName": "amplify-magictailors-dev-173409",
+      "StackId": "arn:aws:cloudformation:us-east-1:031497916965:stack/amplify-magictailors-dev-173409/8a09eea0-a737-11ed-b084-12578dc85e4d",
+      "AmplifyAppId": "d1aum8d3sgp0hz"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1aum8d3sgp0hz",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
