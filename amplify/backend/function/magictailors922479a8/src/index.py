@@ -9,8 +9,8 @@ CORS(app)
 BASE_ROUTE = "/hello"
 
 
-@app.route(BASE_ROUTE, methods=['GET'])
-def list_songs():
+@app.route(BASE_ROUTE)
+def hello_world():
     response_body = {
         "name": "Trinity",
         "hello": "Hello, World!"
