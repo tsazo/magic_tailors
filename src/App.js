@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 
 import { Amplify, API } from 'aws-amplify'
-import configure from './aws-exports.js'
+import configure from './aws-exports'
 
 Amplify.configure(configure)
 
