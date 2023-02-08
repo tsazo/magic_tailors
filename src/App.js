@@ -3,9 +3,9 @@ import logo from './logo.svg'
 import './App.css'
 
 import { Amplify, API } from 'aws-amplify'
-import config from './aws-exports'
+import configure from './aws-exports.js'
 
-Amplify.configure(config)
+Amplify.configure(configure)
 
 
 function App() {
