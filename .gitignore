@@ -22,10 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# back end flask
-/backend/venv
-/backend/__pycache__
-
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
 amplify/.config/local-*
