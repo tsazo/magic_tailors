@@ -17,6 +17,15 @@
           "appId": "d1aum8d3sgp0hz",
           "type": "cicd"
         }
+      },
+      "function": {
+        "magictailors922479a8": {
+          "deploymentBucketName": "amplify-magictailors-dev-173409-deployment",
+          "s3Key": "amplify-builds/magictailors922479a8-53575033556a6a756f5a-build.zip"
+        }
+      },
+      "api": {
+        "api51043e73": {}
       }
     }
   }

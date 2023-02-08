@@ -3,27 +3,42 @@ import axios from "axios"
 import logo from './logo.svg'
 import './App.css'
 
+import { Amplify, API } from 'aws-amplify'
+import config from './aws-exports'
+
+Amplify.configure(config)
+
+
 function App() {
 
    // new line start
    const [profileData, setProfileData] = useState(null)
+   
+   const getData = async () => {
+    console.log("fetching data")
+    const data = await API.get('api51043e73', '/hello')
+    console.log(data)
+    setProfileData(({
+            profile_name: data.name,
+            hello_world: data.hello}))
+  }
 
-  function getData() {
-    console.log("fetching python localhost");
-    axios.get('/hello')
-      .then((response) => {
-        const res = response.data
-        console.log(res)
-      setProfileData(({
-        profile_name: res.name,
-        hello_world: res.hello}))
-    }).catch((error) => {
-      if (error.response) {
-        console.log(error.response)
-        console.log(error.response.status)
-        console.log(error.response.headers)
-        }
-    })}
+  // function getData() {
+  //   console.log("fetching python localhost");
+  //   axios.get('/hello')
+  //     .then((response) => {
+  //       const res = response.data
+  //       console.log(res)
+  //     setProfileData(({
+  //       profile_name: res.name,
+  //       hello_world: res.hello}))
+  //   }).catch((error) => {
+  //     if (error.response) {
+  //       console.log(error.response)
+  //       console.log(error.response.status)
+  //       console.log(error.response.headers)
+  //       }
+  //   })}
 
     //end of new line 
 

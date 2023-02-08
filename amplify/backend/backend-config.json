@@ -1,4 +1,27 @@
 {
+  "api": {
+    "api51043e73": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "magictailors922479a8"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "magictailors922479a8": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "lastPushTimeStamp": "2023-02-07T23:05:53.167Z",
@@ -7,6 +30,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_magictailors922479a8_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "magictailors922479a8"
+        }
+      ]
+    },
+    "AMPLIFY_function_magictailors922479a8_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "magictailors922479a8"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {

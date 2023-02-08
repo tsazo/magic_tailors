@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/hello": {
+      "name": "/hello",
+      "lambdaFunction": "magictailors922479a8",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
