@@ -13,6 +13,7 @@ function App() {
    // new line start
    const [profileData, setProfileData] = useState(null)
    
+   // custom API
    const getData = async () => {
     console.log("fetching data")
     const data = await API.get('api51043e73', '/hello')
@@ -21,25 +22,6 @@ function App() {
             profile_name: data.name,
             hello_world: data.hello}))
   }
-
-  // function getData() {
-  //   console.log("fetching python localhost");
-  //   axios.get('/hello')
-  //     .then((response) => {
-  //       const res = response.data
-  //       console.log(res)
-  //     setProfileData(({
-  //       profile_name: res.name,
-  //       hello_world: res.hello}))
-  //   }).catch((error) => {
-  //     if (error.response) {
-  //       console.log(error.response)
-  //       console.log(error.response.status)
-  //       console.log(error.response.headers)
-  //       }
-  //   })}
-
-    //end of new line 
 
   return (
     <div className="App">
