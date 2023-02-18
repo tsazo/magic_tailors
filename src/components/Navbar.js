@@ -9,8 +9,9 @@ function Navbar({ activePage }) {
 
   return (
     <div className="nav">
-        <div className="nav-link title-text">
+        <div>
             <NavLink
+                className="nav-link title-text"
                 to="/"
                 end>
                 MAGIC TAILORS
