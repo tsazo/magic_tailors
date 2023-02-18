@@ -1,6 +1,13 @@
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import Navbar from './components/Navbar'
+import Banner from './components/Banner'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages';
+import Services from './pages/services';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Book from './pages/book';
 
 import { Amplify, API } from 'aws-amplify'
 import configure from './aws-exports'
@@ -25,29 +32,18 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
-        {/* new line start*/}
-        <p>To get your profile details: </p><button onClick={getData}>Click me</button>
-        {profileData && <div>
-              <p>Profile name: {profileData.profile_name}</p>
-              <p>{profileData.hello_world}</p>
-            </div>
-        }
-         {/* end of new line */}
-      </header>
+      <Router>
+        <Banner></Banner>
+        {/* better way to handle navbar -- create a state in which onClick navbar sets the state to the page active */}
+        <Navbar></Navbar>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/book' element={<Book />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

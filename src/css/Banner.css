@@ -1,0 +1,10 @@
+.banner {
+    padding: 8px 0px;
+    border-bottom: 1px solid black;
+}
+
+.banner-link {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+.nav {
+    background-color: white;
+    width: 100vw;
+    padding: 8px 0px;
+    position: sticky;
+    top: 0;
+    max-height: 10vh;
+    text-align: center;
+
+    /* keeps width/height at specified dimensions despite padding */
+    box-sizing: border-box;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.nav-list {
+    display:-webkit-inline-box;;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    margin: 8px;
+}
+
+.navLinkItem {
+    padding: 10px;
+}
+
+.navLinkText {
+    width: -webkit-fill-available;
+}
