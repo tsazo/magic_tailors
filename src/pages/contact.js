@@ -5,12 +5,12 @@ const Contact = () => {
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
+        justifyContent: 'Center',
+        alignItems: 'Center',
+        height: '90vh'
       }}
     >
-      <h1>contact geni's tailor shop.</h1>
+      <h1>contact geni's tailor shop</h1>
     </div>
   );
 };

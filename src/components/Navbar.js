@@ -19,6 +19,7 @@ function Navbar({ activePage }) {
         <ul className="nav-list">
             <li>
                 <NavLink
+                    className="nav-link"
                     to="/"
                     end
                 >
@@ -28,6 +29,7 @@ function Navbar({ activePage }) {
             </li>
             <li>
                 <NavLink
+                    className="nav-link"
                     to="/services"
                     style={({ isActive }) =>
                     isActive ? activeStyle : undefined
@@ -39,6 +41,7 @@ function Navbar({ activePage }) {
             </li>
             <li>
                 <NavLink
+                    className="nav-link"
                     to="/about"
                     style={({ isActive }) =>
                     isActive ? activeStyle : undefined
@@ -49,6 +52,7 @@ function Navbar({ activePage }) {
             </li>
             <li>
                 <NavLink
+                    className="nav-link"
                     to="/contact"
                     style={({ isActive }) =>
                     isActive ? activeStyle : undefined
@@ -59,6 +63,7 @@ function Navbar({ activePage }) {
             </li>
             <li>
                 <NavLink
+                    className="nav-link"
                     to="/book"
                     style={({ isActive }) =>
                     isActive ? activeStyle : undefined

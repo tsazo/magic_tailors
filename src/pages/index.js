@@ -6,12 +6,12 @@ const Home = () => {
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
+        justifyContent: 'Center',
+        alignItems: 'Center',
+        height: '90vh'
       }}
     >
-      <h1>Welcome to GeeksforGeeks</h1>
+      <h1>Magic Tailor's</h1>
     </div>
   );
 };
