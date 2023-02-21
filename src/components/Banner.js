@@ -1,11 +1,12 @@
 import '../css/Banner.css'
+import { NavLink } from 'react-router-dom';
 
 const Banner = () => {
   return (
     <div className="banner">
-        <a className="banner-link" href="#" rel="noopener noreferrer">
+        <NavLink className="banner-link" to="/book">
             SCHEDULE APPOINTMENT
-        </a>
+        </NavLink>
     </div>
   );
 }
