@@ -8,6 +8,7 @@ import Services from './pages/services';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Book from './pages/book';
+import Reviews from './pages/reviews';
 
 import { Amplify, API } from 'aws-amplify'
 import configure from './aws-exports'
@@ -42,6 +43,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/book' element={<Book />} />
+          <Route path='/reviews' element={<Reviews />} />
         </Routes>
       </Router>
     </div>
