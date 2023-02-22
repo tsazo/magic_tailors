@@ -38,7 +38,8 @@ const Home = () => {
             display: 'flex',
             justifyContent: 'space-evenly',
             alignItems: 'center',
-            width: '100%'
+            width: '100%',
+            marginBottom: '24px'
           }}
         >
           <div style={{
