@@ -1,15 +1,18 @@
 import '../css/Navbar.css'
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/icons/logo_black.png'
+import classnames from "classnames";
 
-function Navbar({ activePage }) {
+function Navbar({ activePage, visible }) {
 
   let activeStyle = {
     textDecoration: "underline",
   };
 
   return (
-    <div style={{zIndex: '1'}} className="nav">
+    <div style={{zIndex: '1'}} className={classnames("nav", {
+        "navbar--hidden": !visible
+      })}>
         <div className="title">
             <NavLink
                 className="title-nav-link"

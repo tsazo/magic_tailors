@@ -18,10 +18,8 @@ const HomeHeader = () => {
         </div>
 
 
-        <Button>
-            <NavLink className="" to="/book">
-                SCHEDULE APPOINTMENT
-            </NavLink>
+        <Button to="/book">
+          SCHEDULE APPOINTMENT
         </Button>
       </div>
   );

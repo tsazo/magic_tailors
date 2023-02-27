@@ -25,10 +25,10 @@ function PageSection(props) {
             style={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContnet: 'center',
+                justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: backgroundColor,
-                padding: '48px',
+                padding: '96px 0px',
                 color: color,
                 height: height
             }}

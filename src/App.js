@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from "react";
 import './App.css'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
@@ -26,17 +26,31 @@ function App() {
     console.log("fetching data")
     const data = await API.get('api51043e73', '/hello')
     console.log(data)
-    setProfileData(({
-            profile_name: data.name,
-            hello_world: data.hello}))
+  }
+
+  const [yOffset, setYOffset] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  function handleScroll() {
+    const currentYOffset = window.pageYOffset;
+    const visible = yOffset > currentYOffset;
+
+    setYOffset(currentYOffset);
+    setVisible(visible);
   }
 
   return (
     <div className="App">
+      {/* <button onClick={getData}>Click me</button> */}
       <Router>
-        <Banner></Banner>
+        <Banner />
         {/* better way to handle navbar -- create a state in which onClick navbar sets the state to the page active */}
-        <Navbar></Navbar>
+        <Navbar visible={visible}/>
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path='/services' element={<Services />} />
