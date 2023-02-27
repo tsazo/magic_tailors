@@ -4,6 +4,7 @@ import PageSection from '../components/PageSection';
 import logo_black from '../assets/icons/logo_black.png';
 import logo_white from '../assets/icons/logo_white.png';
 import mt from '../assets/icons/mt_typography.png';
+import store_stock from '../assets/img/store_stock_photo.jpg';
 import Heading from '../components/Heading';
 import SectionLine from '../components/SectionLine';
 import Button from '../components/Button';
@@ -15,8 +16,8 @@ const Home = () => {
       <HomeHeader></HomeHeader>
 
       {/* TODO: May want to move to it's own file*/}
-      <PageSection backgroundColor='blue'>
-        <img style={{ height: '50px'}} src={logo_white}/>
+      <PageSection backgroundColor='blue' isRounded='true'>
+        <img style={{ height: '50px'}} src={logo_white} alt="Magic Tailors' Logo" />
         <p style={{width: '50%'}}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non velit metus. Praesent tempor lorem a ipsum pharetra fringilla. Quisque at massa eu risus porttitor.
         </p>
@@ -24,7 +25,7 @@ const Home = () => {
       </PageSection>
 
       {/* TODO: Move to a Services Section js file */}
-      <PageSection backgroundColor='grey'>
+      <PageSection>
         <Heading>Services</Heading>
         <SectionLine></SectionLine>
         <p style={{width: '50%'}}>
@@ -115,7 +116,10 @@ const Home = () => {
               width: '55%',
               height: 'inherit',
               backgroundColor: 'black',
-            }}></div>
+              overflow:'hidden',
+            }}>
+              <img style={{ width: '100%', objectPosition: 'center 100px'}} src={store_stock} alt="Magic Tailors' Logo" />
+          </div>
           <div
             style={{
               display: 'flex',
@@ -124,11 +128,12 @@ const Home = () => {
               alignItems:'baseline',
               width: '45%',
               height: 'inherit',
-              padding: '24px'
+              padding: '24px',
+              textAlign: 'left',
             }}>
               <p style={{fontWeight:'bold'}}>MAGIC TAILOR'S</p>
               <SectionLine/>
-              <p>
+              <p style={{textAlign: 'left',}}>
                 Monday <br/>
                 Monday <br/>
                 Monday <br/>
@@ -136,6 +141,11 @@ const Home = () => {
                 Monday <br/>
                 Monday <br/>
                 Monday <br/>
+                <br/>
+                Address Line 1 <br/>
+                Address Line 2 <br/>
+                Phone <br/>
+                <br/>
               </p>
               <Button to="/contact">GET DIRECTIONS</Button>
             </div>

@@ -1,5 +1,4 @@
 import '../../css/HomeHeader.css'
-import { NavLink } from 'react-router-dom';
 import Button from '../Button'
 import Heading from '../Heading'
 

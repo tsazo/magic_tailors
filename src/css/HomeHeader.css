@@ -8,14 +8,13 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 0% 25%;
-    height: 88vh;
+    height: 90vh;
     width: 100vw;
 }
 
 .home-header-text {
     padding: 24px 32px;
     text-align: center;
-    background-color: white;
     width: fit-content;
     height: fit-content;
     margin-bottom: 24px;
