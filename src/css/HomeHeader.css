@@ -1,14 +1,18 @@
+.home-header-container {
+    height: 100vh;
+    background-image: url('../assets/img/home_stock_photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 30%;
+}
+
 .home-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/img/home_stock_photo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 0% 25%;
-    height: 100vh;
+    height: 90%;
     width: 100vw;
 }
 
