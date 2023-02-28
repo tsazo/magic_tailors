@@ -21,8 +21,10 @@ const HomeHeader = () => {
           alt="Tailor shop stock photo of threads" /> */}
 
         <div className='home-header-text'>
-            <Heading fontSize='50px'>MAGIC TAILOR'S</Heading>
-            <p style={{fontSize: '18px'}}><b>{randomData}</b></p>
+            {/* <Heading fontSize='50px'>MAGIC TAILOR'S</Heading> */}
+            <h1>MAGIC TAILOR'S</h1>
+            {/* <p style={{fontSize: '18px'}}><b>{randomData}</b></p> */}
+            <h3>{randomData}</h3>
         </div>
 
 

@@ -28,6 +28,7 @@ function Navbar({ activePage, visible }) {
                     <NavLink
                         className="nav-link"
                         to="/"
+                        id='home-nav-link'
                         end
                     >
                         HOME
@@ -37,9 +38,6 @@ function Navbar({ activePage, visible }) {
                     <NavLink
                         className="nav-link"
                         to="/services"
-                        style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                        }
                     >
                         SERVICES
                     </NavLink>
@@ -48,9 +46,6 @@ function Navbar({ activePage, visible }) {
                     <NavLink
                         className="nav-link"
                         to="/about"
-                        style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                        }
                     >
                         ABOUT US
                     </NavLink>
@@ -59,9 +54,6 @@ function Navbar({ activePage, visible }) {
                     <NavLink
                         className="nav-link"
                         to="/contact"
-                        style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                        }
                     >
                         CONTACT
                     </NavLink>
@@ -70,9 +62,6 @@ function Navbar({ activePage, visible }) {
                     <NavLink
                         className="nav-link"
                         to="/book"
-                        style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                        }
                     >
                         BOOK
                     </NavLink>
