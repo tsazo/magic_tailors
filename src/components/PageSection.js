@@ -19,6 +19,7 @@ function PageSection(props) {
     }
 
     var height = props.height ? props.height : 'auto'
+    var padding = props.padding ? props.padding : '88px 0px'
 
     return (
         <div
@@ -28,7 +29,7 @@ function PageSection(props) {
                 justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: backgroundColor,
-                padding: '96px 0px',
+                padding: padding,
                 color: color,
                 height: height,
                 borderTopLeftRadius: props.isRounded ? '30px' : 0,

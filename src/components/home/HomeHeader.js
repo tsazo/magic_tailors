@@ -1,8 +1,18 @@
+import { useState } from 'react'
 import '../../css/HomeHeader.css'
 import Button from '../Button'
 import Heading from '../Heading'
 
+var slogans = ["WE SEW WONDERS", "FASHION MAGIC AT WORK", "TAILORED TO PERFECTION"]
+
+const getRandomObject = (array) => {
+  const randomObject = array[Math.floor(Math.random() * array.length)];
+  return randomObject;
+};
+
 const HomeHeader = () => {
+  const [randomData, setRandomData] = useState(() => getRandomObject(slogans));
+
   return (
     <div className='home-header'>
         {/* <img 
@@ -11,9 +21,8 @@ const HomeHeader = () => {
           alt="Tailor shop stock photo of threads" /> */}
 
         <div className='home-header-text'>
-            <Heading>MAGIC TAILOR'S</Heading>
-            <p><b>SAME DAY SERVICE AVAILABLE</b></p>
-            <p>Expert Custom Fittings and Altercations</p>
+            <Heading fontSize='50px'>MAGIC TAILOR'S</Heading>
+            <p style={{fontSize: '18px'}}><b>{randomData}</b></p>
         </div>
 
 

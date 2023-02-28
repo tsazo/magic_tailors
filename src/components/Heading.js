@@ -1,8 +1,10 @@
 import '../css/styles.css'
 
 function Heading(props) {
+  var fontSize = props.fontSize ? props.fontSize : '40px';
+  
   return (
-    <p className='heading'>
+    <p style={{ fontSize: fontSize }} className='heading'>
         {props.children}
     </p>
   );
