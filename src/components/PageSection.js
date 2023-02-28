@@ -32,10 +32,10 @@ function PageSection(props) {
                 padding: padding,
                 color: color,
                 height: height,
-                borderTopLeftRadius: props.isRounded ? '30px' : 0,
-                borderTopRightRadius: props.isRounded ? '30px' : 0,
+                borderTopLeftRadius: props.isRounded ? '75px' : 0,
+                borderTopRightRadius: props.isRounded ? '75px' : 0,
                 position: props.isRounded ? 'relative' : 0 ,
-                top: props.isRounded ? '-30px' : 0 ,
+                top: props.isRounded ? '-75px' : 0 ,
             }}
         >
             {props.children}

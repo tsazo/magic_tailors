@@ -74,7 +74,7 @@ const Home = () => {
       </PageSection>
 
       {/* TODO: Move to a Services Section js file */}
-      <PageSection>
+      <PageSection padding='0px 0px 88px 0px'>
         <Heading>Services</Heading>
         <SectionLine></SectionLine>
         <p style={{width: '50%'}}>

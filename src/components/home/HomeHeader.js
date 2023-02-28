@@ -15,10 +15,6 @@ const HomeHeader = () => {
 
   return (
     <div className='home-header'>
-        {/* <img 
-          style={{width: '100vw', height: '85vh', objectFit: 'cover', opacity: '0.7'}} 
-          src={stock} 
-          alt="Tailor shop stock photo of threads" /> */}
 
         <div className='home-header-text'>
             {/* <Heading fontSize='50px'>MAGIC TAILOR'S</Heading> */}
