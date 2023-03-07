@@ -8,6 +8,9 @@ import needle from '../assets/icons/needle.png';
 import family from '../assets/icons/family.png';
 import check from '../assets/icons/check.png';
 import store_stock from '../assets/img/store_stock_photo.jpg';
+import home_stock from '../assets/img/home_stock_photo2.jpg';
+import home_stock2 from '../assets/img/home_stock_photo3.jpg';
+import home_stock3 from '../assets/img/home_stock_photo4.jpg';
 import Heading from '../components/Heading';
 import SectionLine from '../components/SectionLine';
 import Button from '../components/Button';
@@ -74,68 +77,69 @@ const Home = () => {
       </PageSection>
 
       {/* TODO: Move to a Services Section js file */}
-      <PageSection padding='0px 0px 88px 0px'>
-        <Heading>Services</Heading>
-        <SectionLine></SectionLine>
-        <p style={{width: '50%'}}>
-          <i>
-            Contact us for an appointment today! <br/> Walk-ins are also welcome! <br/> Cash Only
-          </i>
-        </p>
+      <PageSection padding='32px 0px 88px 0px'>
         <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-evenly',
-            alignItems: 'center',
-            width: '100%',
-            marginBottom: '24px'
-          }}
-        >
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            <img style={{ height: '50px'}} src={logo_black}/>
-            <p style={{ fontSize: '24px' }}>Lorem</p>
-            <p style={{ width: '125px', margin: '0px' }}>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            <img style={{ height: '50px'}} src={logo_black}/>
-            <p style={{ fontSize: '24px' }}>Lorem</p>
-            <p style={{ width: '125px', margin: '0px' }}>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}>
-            <img style={{ height: '50px'}} src={logo_black}/>
-            <p style={{ fontSize: '24px' }}>Lorem</p>
-            <p style={{ width: '125px', margin: '0px' }}>Lorem ipsum dolor sit amet.</p>
+            style={{
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+              width: '100%',
+              margin: '0px',
+              height: '60vh',
+              overflow:'hidden',
+              textAlign: 'left',
+            }}
+          >
+          <img style={{ width: '50%'}} src={home_stock3} alt="Stock photo" />
+          <div style={{width:'-webkit-fill-available', padding: '80px'}}>
+            <p>Walk-ins Welcome</p>
+            <p>Contact us for an appointment today! <br/> Walk-ins are also welcome!</p>
+            <p>In fit, quality and service, at Flavio Tailoring we take pride in every last detail of your custom tailored experience, whether it be finest fabrics, the attentive service afforded at our private appointments and fittings, anything is possible with Flavio.</p>
+            <i>Cash Only</i>
           </div>
         </div>
-        <Button to="/services">VIEW ALL SERVICES</Button>
+        <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+              width: '100%',
+              margin: '0px 0px 24px 0px',
+              height: '60vh',
+              overflow:'hidden'
+            }}
+          >
+          <div style={{width:'-webkit-fill-available'}}>
+            Contact us for an appointment today! <br/> Walk-ins are also welcome! <br/> Cash Only
+            <Button to="/services">VIEW ALL SERVICES</Button>
+          </div>
+          <img style={{ width: '50%'}} src={home_stock} alt="Stock photo" />
+        </div>
       </PageSection>
 
       {/* TODO: May want to move to it's own file*/}
-      <PageSection backgroundColor='blue'>
-        <img style={{ height: '50px'}} src={logo_white} alt="Magic Tailors' Logo" />
-        <p style={{width: '50%'}}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non velit metus. Praesent tempor lorem a ipsum pharetra fringilla. Quisque at massa eu risus porttitor.
-        </p>
-        <img style={{ height: '20px'}} src={mt}/>
+      <PageSection padding='40px 88px 88px 88px'>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#2b50AA',
+          borderRadius: '20px',
+          color: 'white',
+          padding: '48px'
+        }}>
+          <Heading>Reviews</Heading>
+          <SectionLine></SectionLine>
+          <img style={{ height: '40px', margin:'16px'}} src={logo_black}/>
+          <p style={{ margin: '8px', width:'50%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ipsum id nisl blandit iaculis ac in nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis consequat leo laoreet neque aliquam finibus. Mauris finibus.</p>
+          <p style={{ fontWeight:'bold' }}>NICHOLAS Z.</p>
+          <Button to="/reviews">READ ALL REVIEWS</Button>
+        </div>
       </PageSection>
 
       {/* TODO: Move to a Review Section js file */}
-      <PageSection>
+      {/* <PageSection>
         <Heading>Reviews</Heading>
         <SectionLine></SectionLine>
         <div
@@ -152,7 +156,7 @@ const Home = () => {
           <p style={{ fontWeight:'bold' }}>NICHOLAS Z.</p>
         </div>
         <Button to="/reviews">READ ALL REVIEWS</Button>
-      </PageSection>
+      </PageSection> */}
 
       {/* TODO: Move to a Contact Section js file */}
       <PageSection backgroundColor='grey'>
