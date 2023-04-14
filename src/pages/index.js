@@ -96,7 +96,7 @@ const Home = () => {
           <div style={{width:'-webkit-fill-available', padding: '80px'}}>
             <p>Walk-ins Welcome</p>
             <p>Contact us for an appointment today! <br/> Walk-ins are also welcome!</p>
-            <p>In fit, quality and service, at Flavio Tailoring we take pride in every last detail of your custom tailored experience, whether it be finest fabrics, the attentive service afforded at our private appointments and fittings, anything is possible with Flavio.</p>
+            <p>From elegant evening dresses to dapper suits, you can count on us to work closely with you to alter, hem, and stitch your garments.</p>
             <i>Cash Only</i>
           </div>
         </div>
@@ -120,26 +120,6 @@ const Home = () => {
       </PageSection>
 
       <ReviewSection />
-
-      {/* TODO: Move to a Review Section js file */}
-      {/* <PageSection>
-        <Heading>Reviews</Heading>
-        <SectionLine></SectionLine>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            width: '100%',
-            margin: '24px'
-          }}
-        >
-          <img style={{ height: '40px', margin:'16px'}} src={logo_black}/>
-          <p style={{ margin: '8px', width:'50%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ipsum id nisl blandit iaculis ac in nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis consequat leo laoreet neque aliquam finibus. Mauris finibus.</p>
-          <p style={{ fontWeight:'bold' }}>NICHOLAS Z.</p>
-        </div>
-        <Button to="/reviews">READ ALL REVIEWS</Button>
-      </PageSection> */}
 
       {/* TODO: Move to a Contact Section js file */}
       <PageSection backgroundColor='grey'>
@@ -210,7 +190,8 @@ const Home = () => {
             margin: '24px'
           }}
         >
-          <p style={{ margin: '8px', width:'50%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ipsum id nisl blandit iaculis ac in nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis consequat leo laoreet neque aliquam finibus. Mauris finibus.</p>
+          <p style={{ margin: '8px', width:'50%' }}>
+          Experience the magic of custom tailoring at Magic Tailor's and let us weave a sartorial spell on your wardrobe. With meticulous precision and unwavering commitment to perfection, we will ensure that every stitch is flawless, every seam seamless, and every button perfectly placed. Book your appointment today.</p>
         </div>
         <Button to="/book">BOOK NOW</Button>
       </PageSection>
