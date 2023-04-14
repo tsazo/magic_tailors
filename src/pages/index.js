@@ -1,22 +1,24 @@
 import React from 'react';
+
 import HomeHeader from '../components/home/HomeHeader';
 import PageSection from '../components/PageSection';
-import logo_black from '../assets/icons/logo_black.png';
-import logo_white from '../assets/icons/logo_white.png';
-import mt from '../assets/icons/mt_typography.png';
 import needle from '../assets/icons/needle.png';
 import family from '../assets/icons/family.png';
 import check from '../assets/icons/check.png';
 import store_stock from '../assets/img/store_stock_photo.jpg';
 import home_stock from '../assets/img/home_stock_photo2.jpg';
-import home_stock2 from '../assets/img/home_stock_photo3.jpg';
 import home_stock3 from '../assets/img/home_stock_photo4.jpg';
 import Heading from '../components/Heading';
 import SectionLine from '../components/SectionLine';
 import Button from '../components/Button';
+import ReviewSection from '../components/home/ReviewSection';
+
+// import logo_black from '../assets/icons/logo_black.png';
+// import logo_white from '../assets/icons/logo_white.png';
+// import mt from '../assets/icons/mt_typography.png';
   
 const Home = () => {
-    console.log("hello")
+
   return (
     <div>
       <HomeHeader></HomeHeader>
@@ -47,7 +49,7 @@ const Home = () => {
             alignItems: 'center',
             width: '250px'
           }}>
-            <img style={{ height: '50px'}} src={needle}/>
+            <img style={{ height: '50px'}} alt="Needle icon" src={needle}/>
             <p style={{ fontSize: '18px', marginBottom: '16px' }}>Operating for 25 years</p>
             <p style={{ margin: '0px'}}> Unlocking your wardrobe's full potential, since 1998.</p>
           </div>
@@ -58,7 +60,7 @@ const Home = () => {
             alignItems: 'center',
             width: '250px'
           }}>
-            <img style={{ height: '50px'}} src={check}/>
+            <img style={{ height: '50px'}} alt="check icon" src={check}/>
             <p style={{ fontSize: '18px', marginBottom: '16px' }}>Walk-ins welcome</p>
             <p style={{ margin: '0px'}} >Providing same-day services for altercations.</p>
           </div>
@@ -69,7 +71,7 @@ const Home = () => {
             alignItems: 'center',
             width: '250px'
           }}>
-            <img style={{ height: '50px'}} src={family}/>
+            <img style={{ height: '50px'}} alt="Family icon" src={family}/>
             <p style={{ fontSize: '18px', marginBottom: '16px' }}>Family-owned & operated</p>
             <p style={{ margin: '0px'}} >Great quality and insight comes from working with the people we know best.</p>
           </div>
@@ -90,7 +92,7 @@ const Home = () => {
               textAlign: 'left',
             }}
           >
-          <img style={{ width: '50%'}} src={home_stock3} alt="Stock photo" />
+          <img style={{ width: '50%'}} src={home_stock3} alt="End of suit jacket sleeve" />
           <div style={{width:'-webkit-fill-available', padding: '80px'}}>
             <p>Walk-ins Welcome</p>
             <p>Contact us for an appointment today! <br/> Walk-ins are also welcome!</p>
@@ -113,30 +115,11 @@ const Home = () => {
             Contact us for an appointment today! <br/> Walk-ins are also welcome! <br/> Cash Only
             <Button to="/services">VIEW ALL SERVICES</Button>
           </div>
-          <img style={{ width: '50%'}} src={home_stock} alt="Stock photo" />
+          <img style={{ width: '50%'}} src={home_stock} alt="Thread station" />
         </div>
       </PageSection>
 
-      {/* TODO: May want to move to it's own file*/}
-      <PageSection padding='40px 88px 88px 88px'>
-        <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: '#2b50AA',
-          borderRadius: '20px',
-          color: 'white',
-          padding: '48px'
-        }}>
-          <Heading>Reviews</Heading>
-          <SectionLine></SectionLine>
-          <img style={{ height: '40px', margin:'16px'}} src={logo_black}/>
-          <p style={{ margin: '8px', width:'50%' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ipsum id nisl blandit iaculis ac in nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis consequat leo laoreet neque aliquam finibus. Mauris finibus.</p>
-          <p style={{ fontWeight:'bold' }}>NICHOLAS Z.</p>
-          <Button to="/reviews">READ ALL REVIEWS</Button>
-        </div>
-      </PageSection>
+      <ReviewSection />
 
       {/* TODO: Move to a Review Section js file */}
       {/* <PageSection>

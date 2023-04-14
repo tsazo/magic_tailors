@@ -1,4 +1,5 @@
 import React from 'react';
+import Slideshow from '../components/Slideshow';
   
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
         height: '90vh'
       }}
     >
-      <h1>geni's tailor shop</h1>
+      <Slideshow/>
     </div>
   );
 };
