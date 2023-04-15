@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import '../../css/HomeHeader.css'
 import Button from '../Button'
-import Heading from '../Heading'
 
 var slogans = ["WE SEW WONDERS", "FASHION MAGIC AT WORK", "TAILORED TO PERFECTION"]
 

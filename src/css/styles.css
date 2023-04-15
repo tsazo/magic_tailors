@@ -83,3 +83,41 @@ h3 {
   font-weight: 600;
   margin: 8px 0px;
 }
+
+h4 {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+h5 {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+/* Footer */
+.footer-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* .footer-list:last-child {
+  margin-right: 16px;
+} */
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  position: relative;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: orange;
+  transition: .5s;
+}

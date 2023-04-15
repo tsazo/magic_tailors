@@ -12,6 +12,7 @@ import Heading from '../components/Heading';
 import SectionLine from '../components/SectionLine';
 import Button from '../components/Button';
 import ReviewSection from '../components/home/ReviewSection';
+import Footer from '../components/Footer';
 
 // import logo_black from '../assets/icons/logo_black.png';
 // import logo_white from '../assets/icons/logo_white.png';
@@ -195,6 +196,8 @@ const Home = () => {
         </div>
         <Button to="/book">BOOK NOW</Button>
       </PageSection>
+
+      <Footer/>
 
     </div>
   );
