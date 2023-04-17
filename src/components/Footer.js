@@ -12,20 +12,22 @@ function Footer() {
         color: 'white'
     }}>
         <div style={{display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
-            <div className="title">
+            <div>
                 <h4>
                     STORE HOURS
                 </h4>
-                <p>Monday: 9 AM – 5 PM</p>
-                <p>Tuesday: 9 AM – 7 PM</p>
-                <p>Wednesday: Closed</p>
-                <p>Thursday: 9 AM – 7 PM</p>
-                <p>Friday: 9 AM – 5 PM</p>
-                <p>Saturday: 9 AM – 5 PM</p>
-                <p>Sunday: By Appointment</p>
+                <p style={{textAlign: 'left',}}>
+                Monday: 9 AM – 5 PM <br/>
+                Tuesday: 9 AM – 7 PM <br/>
+                Wednesday: Closed <br/>
+                Thursday: 9 AM – 7 PM <br/>
+                Friday: 9 AM – 5 PM <br/>
+                Saturday: 9 AM – 5 PM <br/>
+                Sunday: By Appointment <br/>
                 <br/>
-                <p>Walk-ins Welcome</p>
-                <p>Cash Only</p>
+                Walk-ins Welcome <br/>
+                <i>Cash Only</i>
+              </p>
             </div>
             <div>
                 <ul className="footer-list">
@@ -73,13 +75,19 @@ function Footer() {
                 </ul>
             </div>
             <div>
-                <p>Phone:</p>
-                <p>(516) 766 - 2443</p>
+                <p>
+                    Phone:<br/>
+                    (516) 766 - 2443
+                </p>
                 <br/>
-                <p>Address:</p>
-                <p>44 N Village Ave</p>
-                <p>Rockville Centre, NY 11570</p>
-                <Button backgroundColor='white' to='/contact'>Contact Us</Button>
+                <p>
+                    Address: <br/>
+                    44 N Village Ave <br/>
+                    Rockville Centre, NY 11570
+                </p>
+                <Button backgroundColor='white' to='/contact'>
+                    Contact Us
+                </Button>
             </div>
 
         </div>
