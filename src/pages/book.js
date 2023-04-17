@@ -1,6 +1,6 @@
 import React from 'react';
 import Calendly from '../components/Calendly'
-  
+
 const Book = () => {
     console.log("book now")
   return (

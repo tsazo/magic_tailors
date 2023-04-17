@@ -1,6 +1,5 @@
 import '../css/Navbar.css'
 import { NavLink } from 'react-router-dom';
-import Heading from './Heading';
 import Button from './Button';
 
 function Footer() {
@@ -9,7 +8,7 @@ function Footer() {
     <div style={{
         padding: '40px',
         backgroundColor: '#24428f',
-        color: 'white'
+        color: 'white',
     }}>
         <div style={{display: 'flex', justifyContent: 'space-between', textAlign: 'left'}}>
             <div>

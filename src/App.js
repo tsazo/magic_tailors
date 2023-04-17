@@ -9,6 +9,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Book from './pages/book';
 import Reviews from './pages/reviews';
+import Footer from './components/Footer';
 
 import { Amplify, API } from 'aws-amplify'
 import configure from './aws-exports'
@@ -59,7 +60,9 @@ function App() {
           <Route path='/book' element={<Book />} />
           <Route path='/reviews' element={<Reviews />} />
         </Routes>
+        <Footer></Footer>
       </Router>
+
     </div>
   );
 }
