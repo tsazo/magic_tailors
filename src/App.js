@@ -18,16 +18,13 @@ Amplify.configure(configure)
 
 
 function App() {
-
-   // new line start
-   const [profileData, setProfileData] = useState(null)
    
    // custom API
-   const getData = async () => {
-    console.log("fetching data")
-    const data = await API.get('api51043e73', '/hello')
-    console.log(data)
-  }
+  //  const getData = async () => {
+  //   console.log("fetching data")
+  //   const data = await API.get('api51043e73', '/hello')
+  //   console.log(data)
+  // }
 
   const [yOffset, setYOffset] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);

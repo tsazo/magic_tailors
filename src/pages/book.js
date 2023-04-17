@@ -9,7 +9,7 @@ const Book = () => {
         height: '90vh'
       }}
     >
-      <h1>book an appointment at geni's tailor shop</h1>
+      <h1>Book an Appointment</h1>
       <Calendly></Calendly>
     </div>
   );
