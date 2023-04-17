@@ -1,8 +1,8 @@
-import PageSection from '../../components/PageSection';
-import Heading from '../../components/Heading';
-import PageSection from '../../components/PageSection';
-import SectionLine from '../../components/SectionLine';
 import Button from '../../components/Button';
+import Heading from '../../components/Heading';
+import SectionLine from '../../components/SectionLine';
+import PageSection from '../../components/PageSection';
+
 
 const BookSection = () => {
   return (
