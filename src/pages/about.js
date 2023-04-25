@@ -1,15 +1,14 @@
 import React from 'react';
+import AboutHeader from '../components/about/AboutHeader';
+import OurStory from '../components/about/OurStory';
+import BookSection from '../components/home/BookSection';
   
 const About = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Center',
-        alignItems: 'Center',
-        height: '90vh'
-      }}
-    >
+    <div>
+      <AboutHeader />
+      <OurStory />
+      <BookSection backgroundColor='grey'/>
     </div>
   );
 };

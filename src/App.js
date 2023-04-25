@@ -47,7 +47,6 @@ function App() {
       {/* <button onClick={getData}>Click me</button> */}
       <Router>
         <Banner />
-        {/* better way to handle navbar -- create a state in which onClick navbar sets the state to the page active */}
         <Navbar visible={visible}/>
         <Routes>
           <Route path='/' exact element={<Home />} />

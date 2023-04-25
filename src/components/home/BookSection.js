@@ -3,10 +3,9 @@ import Heading from '../../components/Heading';
 import SectionLine from '../../components/SectionLine';
 import PageSection from '../../components/PageSection';
 
-
-const BookSection = () => {
+function BookSection(props) {
   return (
-    <PageSection>
+    <PageSection backgroundColor={props.backgroundColor}>
         <Heading>BOOK NOW</Heading>
         <SectionLine></SectionLine>
         <div

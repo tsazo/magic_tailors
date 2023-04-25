@@ -9,8 +9,9 @@ function SectionLine(props) {
                 backgroundColor: '#2B50AA',
                 // color: color,
                 height: '2px',
-                width: width
-                
+                width: width,
+                display: 'block',
+                margin: 'auto',
             }}
         >
         </span>
