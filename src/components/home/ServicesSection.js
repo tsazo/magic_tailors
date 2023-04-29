@@ -20,10 +20,11 @@ const ServicesSection = () => {
           >
           <img style={{ width: '50%'}} src={home_stock3} alt="End of suit jacket sleeve" />
           <div style={{width:'-webkit-fill-available', padding: '80px'}}>
-            <p>Walk-ins Welcome</p>
-            <p>Contact us for an appointment today! <br/> Walk-ins are also welcome!</p>
-            <p>From elegant evening dresses to dapper suits, you can count on us to work closely with you to alter, hem, and stitch your garments.</p>
-            <i>Cash Only</i>
+            <p>
+              From elegant evening dresses to dapper suits, you can count on us to work closely with you to alter, hem, and stitch your garments. We work with you and your needs. We also partner with the local dry cleaners upon request to deliver your clothes in ready-to-wear condition. <br/>
+              <br/>
+              <i>Cash Only</i>
+            </p>
           </div>
         </div>
         <div
@@ -34,12 +35,17 @@ const ServicesSection = () => {
               width: '100%',
               margin: '0px 0px 24px 0px',
               height: '60vh',
-              overflow:'hidden'
+              overflow:'hidden',
+              textAlign: 'left',
             }}
           >
-          <div style={{width:'-webkit-fill-available'}}>
-            Contact us for an appointment today! <br/> Walk-ins are also welcome! <br/> Cash Only
-            <Button to="/services">VIEW ALL SERVICES</Button>
+          <div style={{padding: '0px 80px', width:'-webkit-fill-available'}}>
+            <p>
+            Contact us for an appointment today. <br/> 
+            Walk-ins are welcome! <br/>
+            <br/>
+            </p>
+            <Button to="/services" type='inline'>VIEW ALL SERVICES</Button>
           </div>
           <img style={{ width: '50%'}} src={home_stock} alt="Thread station" />
         </div>

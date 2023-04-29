@@ -84,7 +84,7 @@ function Footer() {
                     44 N Village Ave <br/>
                     Rockville Centre, NY 11570
                 </p>
-                <Button backgroundColor='white' to='/contact'>
+                <Button type='secondary' to='/contact'>
                     Contact Us
                 </Button>
             </div>

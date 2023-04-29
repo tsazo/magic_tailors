@@ -4,24 +4,30 @@ import '../css/styles.css'
 function Button(props) {
     var backgroundColor = '#2B50AA';
     var color = 'white'
+    var className = 'button'
+    var type = props.type
 
-    switch(props.backgroundColor) {
-        case 'blue':
-            backgroundColor = '#2B50AA'
-            color = 'white'
-            break
-        case 'grey':
-        case 'gray':
-            backgroundColor = '#F3F5F7'
-            color = "black"
-            break
-        case 'white':
-            backgroundColor = 'white'
-            color = "black"
-            break
-        default:
-            backgroundColor = '#2B50AA'
-            break
+    switch(type) {
+      case 'primary':
+        backgroundColor = '#2B50AA'
+        color = 'white'
+        className = 'button'
+        break
+      case 'secondary':
+        backgroundColor = '#F3F5F7'
+        color = "black"
+        className = 'button'
+        break
+      case 'inline':
+        backgroundColor = 'transparent'
+        color = '#2B50AA'
+        className = 'inline-button'
+        break
+      default:
+        backgroundColor = '#2B50AA'
+        color = 'white'
+        className = 'button'
+        break
     }
 
   return (
@@ -31,7 +37,7 @@ function Button(props) {
         backgroundColor: backgroundColor,
         color: color
       }} 
-      className='button'
+      className = {className}
     >
       {props.children}
     </NavLink>
