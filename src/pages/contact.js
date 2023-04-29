@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../components/Button';
 import PageSection from '../components/PageSection';
 import SectionLine from '../components/SectionLine';
 import store_stock from '../assets/img/store_stock_photo.jpg';

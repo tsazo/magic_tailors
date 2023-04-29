@@ -38,7 +38,10 @@ body {
   width: auto;
 }
 
-.inline-button {
+.inlinebutton {
+  border: 0;
+  border-radius: 16px;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;

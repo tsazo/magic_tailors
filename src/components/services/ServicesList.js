@@ -22,7 +22,9 @@ const ServicesList = () => {
           }}>
             <p style={{ fontSize: '18px', marginBottom: '8px'}}>Men</p>
             <SectionLine/>
-            <p> Unlocking your wardrobe's full potential, since 1998.</p>
+            <p>
+              Our tailoring services offer a range of men's wear options, including suits, shirts, trousers, and jackets, as well as specialized services such as alterations and repairs.
+            </p>
           </div>
           <div style={{
             display: 'flex',
@@ -32,7 +34,9 @@ const ServicesList = () => {
           }}>
             <p style={{ fontSize: '18px', marginBottom: '8px'}}>Women</p>
             <SectionLine/>
-            <p>Providing same-day services for altercations.</p>
+            <p>
+              We offer services on garments including dresses, blouses, skirts, and pants, as well as specialized services such as alterations and repairs.
+            </p>
           </div>
           <div style={{
             display: 'flex',
@@ -42,7 +46,9 @@ const ServicesList = () => {
           }}>
             <p style={{ fontSize: '18px', marginBottom: '8px'}}>Prom</p>
             <SectionLine/>
-            <p>Great quality and insight comes from working with the people we know best.</p>
+            <p>
+              Prom being a special occassion for our high school seniors, we are equipped assist in altering dresses, suits, and tuxedos. The aim is to create a custom-fit outfit that is not only perfectly fitted but also stylish and comfortable.
+            </p>
           </div>
           <div style={{
             display: 'flex',
@@ -52,7 +58,9 @@ const ServicesList = () => {
           }}>
             <p style={{ fontSize: '18px', marginBottom: '8px'}}>Bridal</p>
             <SectionLine/>
-            <p>Great quality and insight comes from working with the people we know best.</p>
+            <p>
+              With any wedding we may handle any garment such as the bridal gown, wedding dress, bridesmaid dress alterations, veil and accessory customizations, and groom needs. 
+            </p>
           </div>
           <div style={{
             display: 'flex',
@@ -62,7 +70,9 @@ const ServicesList = () => {
           }}>
             <p style={{ fontSize: '18px', marginBottom: '8px'}}>Fit & Style Consultations</p>
             <SectionLine/>
-            <p>Great quality and insight comes from working with the people we know best.</p>
+            <p>
+              Let us help you feel confident in making your clothes fit to you and your body.
+            </p>
           </div>
           <div style={{
             display: 'flex',
@@ -72,7 +82,9 @@ const ServicesList = () => {
           }}>
             <p style={{ fontSize: '18px', marginBottom: '8px'}}>Custom Requests</p>
             <SectionLine/>
-            <p>Great quality and insight comes from working with the people we know best.</p>
+            <p>
+              Don't see the service you're looking for here? Feel free to visit the store during operating hours and we will cater to your request. 
+            </p>
           </div>
         </div>
       </PageSection>
