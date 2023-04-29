@@ -9,7 +9,7 @@ const OurStory = () => {
     <PageSection>
         <div style={{'width': '50%'}}>
             <h1>Our Story</h1>
-            <SectionLine />
+            <SectionLine margin='auto' />
             <div style={{'textAlign': 'left'}}>
                 {ourStory.map((text) =>
                 <p>{text}</p>)}

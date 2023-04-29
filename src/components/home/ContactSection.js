@@ -39,20 +39,21 @@ const ContactSection = () => {
               padding: '24px',
               textAlign: 'left',
             }}>
-              <p style={{fontWeight:'bold'}}>MAGIC TAILOR'S</p>
+              <h2>MAGIC TAILOR'S</h2>
               <SectionLine/>
               <p style={{textAlign: 'left',}}>
-                Monday <br/>
-                Tuesday <br/>
-                Wednesday <br/>
-                Thursday <br/>
-                Friday <br/>
-                Saturday <br/>
-                Sunday <br/>
+                Monday: 9 AM – 5 PM <br/>
+                Tuesday: 9 AM – 7 PM <br/>
+                Wednesday: Closed <br/>
+                Thursday: 9 AM – 7 PM <br/>
+                Friday: 9 AM – 5 PM <br/>
+                Saturday: 9 AM – 5 PM <br/>
+                Sunday: By Appointment <br/>
                 <br/>
-                Address Line 1 <br/>
-                Address Line 2 <br/>
-                Phone <br/>
+                44 N Village Ave <br/>
+                Rockville Centre, NY 11570 <br/>
+                <br/>
+                (516) 766-2443 <br/>
                 <br/>
               </p>
               <Button to="/contact">GET DIRECTIONS</Button>

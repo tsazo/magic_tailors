@@ -2,6 +2,7 @@ import '../css/styles.css'
 
 function SectionLine(props) {
     var width = props.width ? props.width : '40px'
+    var margin = props.margin
 
     return (
         <span
@@ -11,7 +12,7 @@ function SectionLine(props) {
                 height: '2px',
                 width: width,
                 display: 'block',
-                margin: 'auto',
+                margin: margin,
             }}
         >
         </span>

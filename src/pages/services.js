@@ -1,9 +1,14 @@
 import React from 'react';
+import BookSection from '../components/home/BookSection';
+import ServiceHeader from '../components/services/ServiceHeader';
+import ServicesList from '../components/services/ServicesList';
   
 const Services = () => {
   return (
     <div>
-      <h1>services geni's tailor shop offers</h1>
+      <ServiceHeader />
+      <ServicesList />
+      <BookSection />
     </div>
   );
 };
