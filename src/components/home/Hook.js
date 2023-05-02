@@ -8,7 +8,7 @@ const Hook = () => {
     <PageSection isRounded='true' padding='88px 0px 0px 0px'>
         <div style={{ width: '50%'}} >
           <p style={{ margin: '0px 0px 24px', fontSize: '60px', fontWeight: '500', lineHeight: '75px',}}>
-            Expert custom fittings and altercations.
+            Expert custom fittings and alterations.
           </p>
           <p style={{fontSize: '20px', margin: '0px 0px 24px 0px',}}>Enjoy the confidence of well-fitting clothes.</p>
         </div>
